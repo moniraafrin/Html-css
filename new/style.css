@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.container{
+    width: 100%;
+    padding: 10px 5px;
+    background: #bbbbbb;
+    box-shadow: 2px 2px 4px #bbbbbb;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 1140px;
+}
+
+.middle ul,
+.middle{
+    display: flex;
+ 
+}
+
+
+.middle ul li{
+    list-style: none;
+   padding: 10px 5px;
+   margin: 0 10px;
+   font-size: 14px;
+    font-weight: 700;
+}
+
+.middle ul li:hover{
+    cursor: pointer;
+    font-size: 16px;
+    color: #0d6efd;
+}
+
+.btn{
+    display: flex; 
+}
+
+button{
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-primary{
+    color: #ffff;
+    border-color: #0d6efd;
+    background-color: #0d6efd;
+}
+
+.btn-info{
+    color: #ffff;
+    border-color: #0dcaf0;
+    background-color: #0dcaf0;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #0c742e;
+}
+
+.logo{
+    margin-top: 8px;
+}
+
+.logo img{
+    height: auto;
+    width: 124px;
+}
+
+.toggle-icon button{
+    border: 1px solid #f80606;
+    padding: 5px 10px;
+    color: green;
+}
+
+
+/* media tag devices:start  */ 
+/*  320px — 480px: Mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    nav{
+        width: 100%;
+    }
+
+    
+    .toggle-icon{
+        display: flex;
+    }
+
+    .btn,
+    .middle{
+        display: none;
+    }
+
+    .logo img{
+        height: auto;
+        width: 84px;
+    }
+
+    .logo{
+        margin-top: 2px;
+    }
+}
+/* 481px — 768px: iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* 768px iPads, Tablets */
+@media only screen and (min-width: 768px){
+}
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+/* 1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 1201px) {
+    nav{
+        width: 100%;
+    }
+
+    .toggle-icon{
+        display: none;
+    }
+}
+/* media tag devices:end */
