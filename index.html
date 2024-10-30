@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook login page</title>
+    <title>sidebar menu</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-    <div class="facebook-page">
-    <div class="text">
-        <h1>Facebook</h1>
-        <p>contact with friends and the world </p>
-            <p>around you on facebook</p>
+   <div class="content">
+
+    <input type="checkbox" id="check">
+    <div class="button">
+        <label for="check">
+            <i class='bx bx-menu'></i>
+        </label>
     </div>
-    <form action="#">
-        <input type="email" id="email" name="email" placeholder="Email or phone number" autocomplete="on"><br>
-        <input type="password" id="password" name="password" placeholder="Password" autocomplete="on" required><br>
-        <div class="login-link">
-            <button type="submit" class="login-btn"> Log In</button>
-            <a href="#" class="forgot-password">Forgot password?</a>
+
+    <div class="sidebar_menu">
+        <div class="logo">
+            <a href="#">Sidebar Menu</a>
         </div>
-        <hr>
-        <div class="creat-account">
-            <a href="#">Creat new account</a>
+        <div class="btn_one">
+            <label for="check">
+                <i class='bx bx-x'></i>
+            </label>
         </div>
-    </form>
+
+        <div class="menu">
+        <ul>
+       <li><a href="#"> <i class='bx bx-qr'></i>
+        Dashboard</a></li>
+       <li><a href="#"> <i class='bx bx-link'></i> 
+        Shortcuts</a></li>
+       <li><a href="#"> <i class="bx bx-calendar-week"></i> 
+        Overview</a></li>
+       <li><a href="#"> <i class='bx bxs-image-alt'></i>
+        Image</a></li>
+       <li><a href="#"> <i class='bx bxs-calendar-minus'></i> 
+        Event</a></li>
+       <li><a href="#"> <i class='bx bxs-contact'></i>
+        Contact</a></li>
+       <li><a href="#"> <i class='bx bxs-message-rounded-dots'></i> 
+        Feedback</a></li>
+         </ul>
+        </div>
+
+    <div class="social_media">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
     </div>
     </div>
-    
+   </div>
+
 </body>
 </html>
